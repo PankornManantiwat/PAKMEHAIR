@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420">
+<ellipse cx="150" cy="395" rx="88" ry="12" fill="#000" opacity=".08"/>
+<rect x="126" y="30" width="48" height="32" rx="5" fill="#d7d5c9"/>
+<rect x="117" y="58" width="66" height="22" rx="7" fill="#c9c8bd"/>
+<path d="M104 82 Q104 70 119 70 H181 Q196 70 196 88 L213 126 Q220 143 220 160 V350 Q220 378 192 378 H108 Q80 378 80 350 V160 Q80 143 87 126Z" fill="#315d4d"/>
+<path d="M104 95 Q150 84 196 95 L206 132 Q150 119 94 132Z" fill="#fff" opacity=".08"/>
+<rect x="94" y="174" width="112" height="126" rx="3" fill="#e8d9c1"/>
+<text x="150" y="216" text-anchor="middle" font-family="Georgia,serif" font-size="16" letter-spacing="1" fill="#315044">PAKMEHAIR</text>
+<path d="M115 230 H185" stroke="#8b8d78" stroke-width="1"/>
+<text x="150" y="252" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" letter-spacing="1.2" fill="#46584a">DAILY NOURISH</text>
+<text x="150" y="273" text-anchor="middle" font-family="Arial,sans-serif" font-size="7" letter-spacing="1" fill="#667265">HAIR CARE · 300 ML</text>
+<circle cx="150" cy="286" r="4" fill="#9b795b"/>
+</svg>
