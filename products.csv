@@ -1,0 +1,4 @@
+﻿sku,name,type,description,price,stock,image
+BT001,Botané Daily Nourish Shampoo,DAILY CARE,แชมพูทำความสะอาดเส้นผม เหมาะสำหรับการดูแลเป็นประจำ,259,30,assets/products/shampoo-daily.svg
+BT002,Botané Smooth Repair Shampoo,REPAIR CARE,แชมพูสำหรับผมแห้งเสีย ช่วยให้เส้นผมดูเรียบลื่น,329,24,assets/products/shampoo-repair.svg
+BT003,Botané Herbal Fresh Shampoo,HERBAL CARE,แชมพูสูตรสมุนไพร ให้ความรู้สึกสดชื่นหลังสระ,289,18,assets/products/shampoo-herbal.svg

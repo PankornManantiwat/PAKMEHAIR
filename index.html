@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173f35">
+  <title>PAKMEHAIR — Hair Care Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#"><span class="brand-mark">B</span><span>PAKMEHAIR<small>HAIR CARE STUDIO</small></span></a>
+  <nav><a href="#shop">สินค้า</a><a href="#about">เกี่ยวกับเรา</a><a href="#shipping">การจัดส่ง</a></nav>
+  <button class="cart-button" id="openCart" aria-label="เปิดตะกร้า">ตะกร้า <span id="cartCount">0</span></button>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">EVERYDAY HAIR RITUAL</p>
+      <h1>ดูแลเส้นผม<br><em>อย่างอ่อนโยน</em></h1>
+      <p>เลือกผลิตภัณฑ์ดูแลเส้นผมที่เหมาะกับคุณ เติมความสดชื่นให้ทุกวันเริ่มต้นอย่างมั่นใจ</p>
+      <a class="primary-link" href="#shop">เลือกชมสินค้า <span>↗</span></a>
+    </div>
+    <div class="hero-art"><div class="sun"></div><img src="assets/products/hero-bottle.svg" alt="ขวดแชมพู PAKMEHAIR"><span class="hero-note">NATURE<br>IN EVERY DROP</span></div>
+  </section>
+  <section class="shop-section" id="shop">
+    <div class="section-heading"><div><p class="eyebrow">OUR COLLECTION</p><h2>สินค้าแนะนำ</h2></div><p class="muted">คัดสรรเพื่อการดูแลเส้นผมในทุกวัน</p></div>
+    <div class="status-line" id="dataStatus">กำลังโหลดรายการสินค้า…</div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+  <section class="about-section" id="about">
+    <div><p class="eyebrow">OUR PHILOSOPHY</p><h2>เรียบง่าย<br>แต่ใส่ใจในทุกรายละเอียด</h2></div>
+    <p>PAKMEHAIR เป็นร้านตัวอย่างสำหรับการเรียนรู้ระบบร้านค้าออนไลน์ ตั้งแต่การจัดเก็บข้อมูลสินค้า การเลือกซื้อ การรับคำสั่งซื้อ ไปจนถึงการเตรียมสินค้าเพื่อจัดส่ง</p>
+  </section>
+  <section class="shipping-section" id="shipping">
+    <p class="eyebrow">DELIVERY PROCESS</p><h2>สั่งซื้ออย่างมั่นใจ</h2>
+    <div class="steps"><div><b>01</b><strong>เลือกสินค้า</strong><span>เพิ่มสินค้าที่ต้องการลงตะกร้า</span></div><div><b>02</b><strong>กรอกข้อมูลจัดส่ง</strong><span>ระบุชื่อ ที่อยู่ และเบอร์โทรศัพท์</span></div><div><b>03</b><strong>ตรวจสอบคำสั่งซื้อ</strong><span>ร้านค้าจัดเตรียมรายการสินค้า</span></div></div>
+  </section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">B</span><span>PAKMEHAIR<small>HAIR CARE STUDIO</small></span></a><p>ตัวอย่างเว็บไซต์เพื่อการศึกษา · ระบบสาธิต ไม่มีการชำระเงินจริง</p></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="ตะกร้าสินค้า">
+  <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>ตะกร้าสินค้า</h2></div><button class="icon-button" id="closeCart" aria-label="ปิด">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-bottom"><div class="total-row"><span>ยอดรวม</span><strong id="cartTotal">฿0</strong></div><button class="primary-button" id="checkoutBtn">ดำเนินการสั่งซื้อ</button></div>
+</aside>
+
+<div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+  <div class="modal-head"><div><p class="eyebrow">CHECKOUT</p><h2 id="checkoutTitle">ข้อมูลสำหรับจัดส่ง</h2></div><button class="icon-button" id="closeCheckout">×</button></div>
+  <form id="checkoutForm">
+    <label>ชื่อ-นามสกุล<input name="customer" required placeholder="ชื่อผู้รับพัสดุ"></label>
+    <label>เบอร์โทรศัพท์<input name="phone" required inputmode="tel" pattern="[0-9+() -]{9,15}" placeholder="08X-XXX-XXXX"></label>
+    <label>ที่อยู่จัดส่ง<textarea name="address" required rows="3" placeholder="บ้านเลขที่ ถนน แขวง/ตำบล เขต/อำเภอ จังหวัด รหัสไปรษณีย์"></textarea></label>
+    <label>หมายเหตุ (ถ้ามี)<input name="note" placeholder="เช่น ฝากไว้ที่นิติบุคคล"></label>
+    <div class="total-row"><span>ยอดชำระ (เก็บเงินปลายทาง/โอนภายนอก)</span><strong id="checkoutTotal">฿0</strong></div>
+    <button class="primary-button" type="submit">ยืนยันคำสั่งซื้อ</button>
+    <p class="fine-print">ระบบนี้เป็นตัวอย่างสำหรับงานเรียน ไม่ได้ตัดเงินหรือส่งข้อมูลไปยังร้านค้าจริง</p>
+  </form>
+</div>
+
+<div class="modal order-modal" id="orderModal" role="dialog" aria-modal="true">
+  <div class="modal-head"><div><p class="eyebrow">ORDER CONFIRMED</p><h2>บันทึกคำสั่งซื้อแล้ว</h2></div><button class="icon-button" id="closeOrder">×</button></div>
+  <div id="orderSummary"></div>
+  <div class="order-actions"><button class="secondary-button" id="printSlip">พิมพ์ใบจัดสินค้า / ใบปะหน้าพัสดุ</button><button class="primary-button" id="finishOrder">กลับหน้าร้าน</button></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
